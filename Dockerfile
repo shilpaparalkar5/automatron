@@ -2,8 +2,9 @@ FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get upgrade -y && apt-get -y install \
     tzdata \
-    python-pip \
-    python-dev \
+    python3-pip \
+    python3-dev \
+    python3 \
     nmap \
     curl \
     libffi-dev \
